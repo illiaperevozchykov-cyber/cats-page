@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Серёжа 💙</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { min-height: 100vh; background: linear-gradient(135deg, #e8eaf6 0%, #c5cae9 50%, #9fa8da 100%); font-family: 'Georgia', serif; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; }
+    .back-link { align-self: flex-start; text-decoration: none; color: #283593; font-size: 1rem; margin-bottom: 24px; display: flex; align-items: center; gap: 8px; transition: gap 0.2s; }
+    .back-link:hover { gap: 12px; }
+    .card { background: white; border-radius: 24px; max-width: 600px; width: 100%; overflow: hidden; box-shadow: 0 12px 48px rgba(40,53,147,.18); }
+    .hero { background: linear-gradient(135deg,#e8eaf6,#c5cae9); height: 300px; display: flex; align-items: center; justify-content: center; }
+    .content { padding: 32px; }
+    .cat-name { font-size: 2.4rem; color: #283593; margin-bottom: 8px; }
+    .tagline { font-size: 1.1rem; color: #1a237e; font-style: italic; margin-bottom: 24px; }
+    .section { margin-bottom: 20px; }
+    .section h3 { font-size: 1rem; color: #3949ab; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .section p { color: #37474f; line-height: 1.7; }
+    .stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin: 24px 0; }
+    .stat { background: #e8eaf6; border-radius: 12px; padding: 14px; text-align: center; }
+    .stat-value { font-size: 1.4rem; color: #283593; font-weight: bold; }
+    .stat-label { font-size: 0.75rem; color: #546e7a; margin-top: 4px; }
+    .hobbies { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .hobby-tag { background: #e8eaf6; color: #3949ab; border: 1.5px solid #c5cae9; border-radius: 20px; padding: 6px 16px; font-size: 0.9rem; }
+    .quote { background: #f5f7ff; border-left: 4px solid #3949ab; border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 24px 0; font-style: italic; color: #455a64; }
+  </style>
+</head>
+<body>
+  <a class="back-link" href="index.html">← Все котики</a>
+  <div class="card">
+    <div class="hero">
+      <svg viewBox="0 0 200 180" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="130" rx="55" ry="45" fill="#95a5a6"/>
+        <ellipse cx="100" cy="85" rx="42" ry="38" fill="#95a5a6"/>
+        <polygon points="68,60 58,30 85,52" fill="#95a5a6"/>
+        <polygon points="132,60 142,30 115,52" fill="#95a5a6"/>
+        <polygon points="70,58 62,36 83,53" fill="#ecb7be"/>
+        <polygon points="130,58 138,36 117,53" fill="#ecb7be"/>
+        <ellipse cx="100" cy="90" rx="28" ry="25" fill="#bdc3c7"/>
+        <path d="M82 83 Q88 78 94 83" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <path d="M106 83 Q112 78 118 83" stroke="#555" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <ellipse cx="100" cy="94" rx="4" ry="3" fill="#e74c3c"/>
+        <line x1="70" y1="94" x2="95" y2="96" stroke="#777" stroke-width="1.5"/>
+        <line x1="70" y1="100" x2="95" y2="99" stroke="#777" stroke-width="1.5"/>
+        <line x1="130" y1="94" x2="105" y2="96" stroke="#777" stroke-width="1.5"/>
+        <line x1="130" y1="100" x2="105" y2="99" stroke="#777" stroke-width="1.5"/>
+        <path d="M96 97 Q100 102 104 97" stroke="#c0392b" stroke-width="1.5" fill="none"/>
+        <ellipse cx="75" cy="165" rx="18" ry="12" fill="#95a5a6"/>
+        <ellipse cx="125" cy="165" rx="18" ry="12" fill="#95a5a6"/>
+        <path d="M155 140 Q185 110 170 80 Q165 65 155 75 Q163 90 160 110 Q152 130 148 142" fill="#7f8c8d"/>
+        <text x="150" y="50" font-size="18" fill="#7f8c8d" font-family="Georgia">z</text>
+        <text x="162" y="36" font-size="14" fill="#95a5a6" font-family="Georgia">z</text>
+      </svg>
+    </div>
+    <div class="content">
+      <div class="cat-name">Серёжа 💙</div>
+      <div class="tagline">Задумчивый философ с мудрым взглядом</div>
+      <div class="stats">
+        <div class="stat"><div class="stat-value">5 л</div><div class="stat-label">возраст</div></div>
+        <div class="stat"><div class="stat-value">5.1 кг</div><div class="stat-label">вес</div></div>
+        <div class="stat"><div class="stat-value">★★★★☆</div><div class="stat-label">уровень важности</div></div>
+      </div>
+      <div class="quote">«Я не сплю — я медитирую. Это принципиально разные вещи.»</div>
+      <div class="section">
+        <h3>О характере</h3>
+        <p>Серёжа — кот с характером. Он неторопливый, рассудительный и точно знает, чего хочет. Не бросается к каждому гостю, но если уж решил понравиться человеку — тот обречён влюбиться.</p>
+      </div>
+      <div class="section">
+        <h3>Любимые занятия</h3>
+        <div class="hobbies">
+          <span class="hobby-tag">📚 Сидеть на книгах</span>
+          <span class="hobby-tag">🌧️ Смотреть в окно</span>
+          <span class="hobby-tag">💤 Долгий сон</span>
+          <span class="hobby-tag">🐟 Думать о рыбе</span>
+          <span class="hobby-tag">🧘 Медитация</span>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Любимая еда</h3>
+        <p>Настоящий гурман. Предпочитает свежую рыбу всему остальному. Суп из тунца — его высшая награда.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

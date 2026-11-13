@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Снежок 🤍</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { min-height: 100vh; background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 50%, #ce93d8 100%); font-family: 'Georgia', serif; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; }
+    .back-link { align-self: flex-start; text-decoration: none; color: #6a1b9a; font-size: 1rem; margin-bottom: 24px; display: flex; align-items: center; gap: 8px; transition: gap 0.2s; }
+    .back-link:hover { gap: 12px; }
+    .card { background: white; border-radius: 24px; max-width: 600px; width: 100%; overflow: hidden; box-shadow: 0 12px 48px rgba(106,27,154,.18); }
+    .hero { background: linear-gradient(135deg,#f3e5f5,#e1bee7); height: 300px; display: flex; align-items: center; justify-content: center; }
+    .content { padding: 32px; }
+    .cat-name { font-size: 2.4rem; color: #6a1b9a; margin-bottom: 8px; }
+    .tagline { font-size: 1.1rem; color: #4a148c; font-style: italic; margin-bottom: 24px; }
+    .section { margin-bottom: 20px; }
+    .section h3 { font-size: 1rem; color: #7b1fa2; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .section p { color: #4a148c; line-height: 1.7; }
+    .stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin: 24px 0; }
+    .stat { background: #f3e5f5; border-radius: 12px; padding: 14px; text-align: center; }
+    .stat-value { font-size: 1.4rem; color: #6a1b9a; font-weight: bold; }
+    .stat-label { font-size: 0.75rem; color: #7e57c2; margin-top: 4px; }
+    .hobbies { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .hobby-tag { background: #f3e5f5; color: #7b1fa2; border: 1.5px solid #ce93d8; border-radius: 20px; padding: 6px 16px; font-size: 0.9rem; }
+    .quote { background: #fdf5ff; border-left: 4px solid #7b1fa2; border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 24px 0; font-style: italic; color: #4a148c; }
+    .crown { font-size: 2rem; display: block; text-align: center; margin-bottom: 4px; }
+  </style>
+</head>
+<body>
+  <a class="back-link" href="index.html">← Все котики</a>
+  <div class="card">
+    <div class="hero">
+      <svg viewBox="0 0 200 180" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="100" cy="130" rx="55" ry="45" fill="#f5f5f5"/>
+        <ellipse cx="100" cy="85" rx="42" ry="38" fill="#f5f5f5"/>
+        <polygon points="68,60 58,30 85,52" fill="#f5f5f5"/>
+        <polygon points="132,60 142,30 115,52" fill="#f5f5f5"/>
+        <polygon points="70,58 62,36 83,53" fill="#f8bbd0"/>
+        <polygon points="130,58 138,36 117,53" fill="#f8bbd0"/>
+        <ellipse cx="100" cy="90" rx="28" ry="25" fill="white"/>
+        <ellipse cx="88" cy="82" rx="7" ry="8" fill="#29b6f6"/>
+        <ellipse cx="112" cy="82" rx="7" ry="8" fill="#29b6f6"/>
+        <ellipse cx="88" cy="83" rx="3" ry="5" fill="#1a1a1a"/>
+        <ellipse cx="112" cy="83" rx="3" ry="5" fill="#1a1a1a"/>
+        <ellipse cx="100" cy="94" rx="4" ry="3" fill="#f48fb1"/>
+        <line x1="70" y1="94" x2="95" y2="96" stroke="#aaa" stroke-width="1.5"/>
+        <line x1="70" y1="100" x2="95" y2="99" stroke="#aaa" stroke-width="1.5"/>
+        <line x1="130" y1="94" x2="105" y2="96" stroke="#aaa" stroke-width="1.5"/>
+        <line x1="130" y1="100" x2="105" y2="99" stroke="#aaa" stroke-width="1.5"/>
+        <path d="M96 97 Q100 102 104 97" stroke="#e91e63" stroke-width="1.5" fill="none"/>
+        <ellipse cx="75" cy="165" rx="18" ry="12" fill="#f0f0f0"/>
+        <ellipse cx="125" cy="165" rx="18" ry="12" fill="#f0f0f0"/>
+        <path d="M155 140 Q185 110 170 80 Q165 65 155 75 Q163 90 160 110 Q152 130 148 142" fill="#eeeeee"/>
+        <polygon points="85,48 90,35 95,45 100,32 105,45 110,35 115,48" fill="#ffd700" stroke="#f9a825" stroke-width="1"/>
+        <circle cx="100" cy="32" r="3" fill="#e53935"/>
+      </svg>
+    </div>
+    <div class="content">
+      <span class="crown">👑</span>
+      <div class="cat-name">Снежок 🤍</div>
+      <div class="tagline">Пушистая аристократия в каждом движении</div>
+      <div class="stats">
+        <div class="stat"><div class="stat-value">2 г</div><div class="stat-label">возраст</div></div>
+        <div class="stat"><div class="stat-value">3.8 кг</div><div class="stat-label">вес</div></div>
+        <div class="stat"><div class="stat-value">★★★★★</div><div class="stat-label">уровень важности</div></div>
+      </div>
+      <div class="quote">«Я не прихожу на зов. Я появляюсь, когда сам того пожелаю.»</div>
+      <div class="section">
+        <h3>О характере</h3>
+        <p>Снежок знает, что он красив, и активно этим пользуется. Пушистый, снежно-белый, с голубыми глазами — он буквально создан для того, чтобы им восхищались. Носит «корону» с рождения.</p>
+      </div>
+      <div class="section">
+        <h3>Любимые занятия</h3>
+        <div class="hobbies">
+          <span class="hobby-tag">🪞 Смотреться в зеркало</span>
+          <span class="hobby-tag">🛋️ Занимать диван</span>
+          <span class="hobby-tag">👑 Быть важным</span>
+          <span class="hobby-tag">🌸 Игнорировать хозяев</span>
+          <span class="hobby-tag">✨ Выглядеть идеально</span>
+        </div>
+      </div>
+      <div class="section">
+        <h3>Любимая еда</h3>
+        <p>Только лучшее. Крем-суп из лосося, паштет из индейки премиум-класса и свежие сливки. Однажды отказался от обычного корма, потому что миска была недостаточно «его цвета».</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
